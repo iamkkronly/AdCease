@@ -1,0 +1,9 @@
+<resources>
+    <!-- Developer: Kaustav Kanti Ray @iamkkronly -->
+    <style name="Theme.AdCease" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#1B8A3A</item>
+        <item name="colorPrimaryDark">#14682C</item>
+        <item name="colorAccent">#1B8A3A</item>
+        <item name="android:windowBackground">#F4F6F8</item>
+    </style>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Developer: Kaustav Kanti Ray @iamkkronly -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6F8"
+    android:padding="26dp">
+
+    <TextView
+        android:id="@+id/stepLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Step 1 of 5"
+        android:textColor="#9AA0A6"
+        android:textSize="13sp" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- 1. Welcome -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AdCease" android:textSize="40sp" android:textStyle="bold"
+                android:textColor="#1B8A3A" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:lineSpacingExtra="5dp"
+                android:text="Block ads across your whole phone.\n\nAds are stopped in every app and browser, not just one. Setup takes a few seconds and you do not need to change any other settings."
+                android:textSize="16sp" android:textColor="#4A5058" />
+        </LinearLayout>
+
+        <!-- 2. Permission -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Allow protection" android:textSize="28sp" android:textStyle="bold"
+                android:textColor="#1A1C1E" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:lineSpacingExtra="5dp"
+                android:text="Your phone will show a short confirmation box on the next screen. Tap OK to let AdCease turn protection on.\n\nThis is what allows ads to be blocked in every app."
+                android:textSize="16sp" android:textColor="#4A5058" />
+        </LinearLayout>
+
+        <!-- 3. Notifications -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Notifications" android:textSize="28sp" android:textStyle="bold"
+                android:textColor="#1A1C1E" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:lineSpacingExtra="5dp"
+                android:text="A small, silent notice tells you whether protection is on or off.\n\nYou can also pause and resume AdCease straight from it."
+                android:textSize="16sp" android:textColor="#4A5058" />
+        </LinearLayout>
+
+        <!-- 4. Battery -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Keep it running" android:textSize="28sp" android:textStyle="bold"
+                android:textColor="#1A1C1E" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:lineSpacingExtra="5dp"
+                android:text="Battery saver can switch AdCease off in the background without telling you, and ads come back.\n\nAllowing it to keep running avoids that. Battery use stays very low."
+                android:textSize="16sp" android:textColor="#4A5058" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="Skip"
+            android:textColor="#9AA0A6" />
+
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:background="@drawable/btn_primary"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

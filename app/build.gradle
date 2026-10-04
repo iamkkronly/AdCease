@@ -1,0 +1,32 @@
+// AdCease :: Developer: Kaustav Kanti Ray @iamkkronly
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.kkronly.adcease'
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.kkronly.adcease"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        resValue "string", "dev_credit", "Developer: Kaustav Kanti Ray @iamkkronly"
+        buildConfigField "String", "DEVELOPER", "\"Kaustav Kanti Ray @iamkkronly\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+}

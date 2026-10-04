@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AdCease dashboard :: Developer: Kaustav Kanti Ray @iamkkronly -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="36dp"
+        android:paddingBottom="28dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protected"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#1B8A3A" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your device is protected from ads"
+            android:textSize="15sp"
+            android:textColor="#8A9199" />
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="34dp">
+
+            <View
+                android:id="@+id/glow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/glow_on" />
+
+            <View
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ring" />
+
+            <ImageView
+                android:id="@+id/powerButton"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:contentDescription="Start or pause ad blocking"
+                android:src="@drawable/ic_power" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📈" android:textSize="22sp" />
+                <TextView android:id="@+id/statTotal" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:text="0" android:textSize="26sp" android:textStyle="bold"
+                    android:textColor="#1A1C1E" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Total\nQueries" android:textSize="13sp" android:textColor="#8A9199" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🚫" android:textSize="22sp" />
+                <TextView android:id="@+id/statBlocked" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:text="0" android:textSize="26sp" android:textStyle="bold"
+                    android:textColor="#1A1C1E" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Blocked" android:textSize="13sp" android:textColor="#8A9199" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🛡" android:textSize="22sp" />
+                <TextView android:id="@+id/statThreats" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:text="0" android:textSize="26sp" android:textStyle="bold"
+                    android:textColor="#1A1C1E" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Threats\nBlocked" android:textSize="13sp" android:textColor="#8A9199" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resetStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:padding="10dp"
+            android:text="Reset statistics"
+            android:textSize="13sp"
+            android:textColor="#1B8A3A" />
+    </LinearLayout>
+</ScrollView>

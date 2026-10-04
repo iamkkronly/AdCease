@@ -1,0 +1,16 @@
+// AdCease - Developer: Kaustav Kanti Ray @iamkkronly
+buildscript {
+  repositories {
+    google()
+    maven { url 'https://maven-central.storage-download.googleapis.com/maven2' }
+    maven { url 'https://repo1.maven.org/maven2' }
+  }
+  dependencies { classpath 'com.android.tools.build:gradle:7.4.2' }
+}
+allprojects {
+  repositories {
+    google()
+    maven { url 'https://maven-central.storage-download.googleapis.com/maven2' }
+    maven { url 'https://repo1.maven.org/maven2' }
+  }
+}
